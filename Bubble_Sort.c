@@ -4,7 +4,7 @@
 int main()
 {
     int size;
-    printf("Input N: ");
+    printf("Input size: ");
     scanf("%d", &size);
     int* array;
     array = (int *)malloc(size * sizeof(int));
