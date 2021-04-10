@@ -10,7 +10,7 @@ void swap(int* a, int* b){
 
     //сортировка пузырьком
 void bubble_sort(int* array, int size){
-    int tmp;
+    
     bool noSwap;
 
     for(int i = size - 1; i >= 0; i--){
