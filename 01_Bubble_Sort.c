@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
+
 void swap(int* a, int* b){
     int tmp;
     tmp = *a;
@@ -7,8 +8,8 @@ void swap(int* a, int* b){
     *b = tmp;
 }
 
-void bubble_sort(int* array, int size){
     //сортировка пузырьком
+void bubble_sort(int* array, int size){
     int tmp;
     bool noSwap;
 
@@ -32,7 +33,6 @@ void write_sort(int* array, int size){
     for(int i = 0; i < size; i++)
         printf("%d ", array[i]);
     printf("\n");
-
 }
 
 int main(){
@@ -48,7 +48,8 @@ int main(){
         scanf("%d", &array[i]);
 
     bubble_sort(array, size);
-    write_sort(&array[0], size);
+    write_sort(array, size);
+    
     free(array);
     return 0;
 }
