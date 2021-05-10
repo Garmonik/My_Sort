@@ -1,29 +1,27 @@
 #include <stdio.h>
 #include <malloc.h>
  
-int main()
-{
+int main(){
     int size;
   
     printf("Input size: ");
     scanf_s("%d", &size);
   
     int* array;
-    array = (int *)malloc(size * sizeof(int));
+    array = (int*)malloc(size * sizeof(int));
   
     printf("Input the array elements:\n");
   
-    for (int i = 0; i < size; i++)
+    for(int i = 0; i < size; i++)
         scanf("%d", &array[i]);
   
     //сортировка методом выбора
     int minPosition, tmp;
  
-    for (int i = 0; i < size; i++)
-    {
+    for(int i = 0; i < size; i++){
         minPosition = i;
       
-        for (int j = i + 1; j < N; j++)
+        for(int j = i + 1; j < N; j++)
             if (array[minPosition] > array[j])
                 minPosition = j;
       
